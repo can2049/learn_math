@@ -13,9 +13,9 @@ $$
 
 
 ### **详细说明**
-1. **二维旋转矩阵的定义**  
+1. **二维旋转矩阵的定义**
    绕原点旋转角度  $\theta$  的二维旋转矩阵为：
-   
+
 $$
    R(\theta) = \begin{bmatrix}
    \cos \theta & -\sin \theta \\
@@ -26,9 +26,9 @@ $$
    - 它保持向量长度不变（正交性）。
    - 行列式  $\det(R) = \cos^2 \theta + \sin^2 \theta = 1$ ，说明它是**纯旋转**（不含反射）。
 
-2. **转置矩阵**  
+2. **转置矩阵**
    转置  $R^T$  为：
-   
+
 $$
    R^T(\theta) = \begin{bmatrix}
    \cos \theta & \sin \theta \\
@@ -38,9 +38,9 @@ $$
 
    - 这相当于旋转  $-\theta$ （即反向旋转）。
 
-3. **逆矩阵的计算**  
+3. **逆矩阵的计算**
    旋转矩阵的逆  $R^{-1}$  表示反向旋转  $-\theta$ ，因此：
-   
+
 $$
    R^{-1}(\theta) = R(-\theta) = \begin{bmatrix}
    \cos \theta & \sin \theta \\
@@ -50,9 +50,9 @@ $$
 
    - 可见  $R^{-1} = R^T$ 。
 
-4. **验证正交性**  
+4. **验证正交性**
    计算  $R^T R$ ：
-   
+
 $$
    R^T R = \begin{bmatrix}
    \cos \theta & \sin \theta \\
@@ -105,14 +105,14 @@ $$
 ### **详细说明**
 1. **旋转矩阵的性质**：
    - 旋转矩阵  $R$  是一个**正交矩阵**（Orthogonal Matrix），即满足：
-     
+
 $$
      R^T R = R R^T = I
      $$
 
 其中  $I$  是单位矩阵。
    - 正交矩阵的定义就是其逆矩阵等于其转置：
-     
+
 $$
      R^{-1} = R^T
      $$
@@ -124,13 +124,13 @@ $$
 
 3. **数学推导**：
    - 设  $R$  是一个旋转矩阵，则它保持向量长度不变：
-     
+
 $$
      \| R \mathbf{v} \| = \| \mathbf{v} \| \quad \text{对所有向量 } \mathbf{v} \text{ 成立。}
      $$
 
    - 由  $\| R \mathbf{v} \|^2 = \mathbf{v}^T R^T R \mathbf{v} = \mathbf{v}^T \mathbf{v}$ ，可得：
-     
+
 $$
      R^T R = I
      $$

@@ -8,23 +8,23 @@
 
 1. **极坐标转换**：
    假设点  $P$  的极坐标为  $(r, \alpha)$ ，其中  $r$  是到原点的距离， $\alpha$  是相对于 x 轴的夹角。原坐标可以表示为：
-   
+
 $$
    x = r \cos \alpha
    $$
 
-   
+
 $$
    y = r \sin \alpha
    $$
 
    旋转  $\theta$  角度后，新角度变为  $\alpha + \theta$ ，新坐标为：
-   
+
 $$
    x' = r \cos(\alpha + \theta)
    $$
 
-   
+
 $$
    y' = r \sin(\alpha + \theta)
    $$
@@ -32,23 +32,23 @@ $$
 
 2. **三角函数加法公式**：
    使用三角函数的加法公式展开：
-   
+
 $$
    \cos(\alpha + \theta) = \cos \alpha \cos \theta - \sin \alpha \sin \theta
    $$
 
-   
+
 $$
    \sin(\alpha + \theta) = \sin \alpha \cos \theta + \cos \alpha \sin \theta
    $$
 
    代入原坐标  $x$  和  $y$ ：
-   
+
 $$
    x' = r (\cos \alpha \cos \theta - \sin \alpha \sin \theta) = x \cos \theta - y \sin \theta
    $$
 
-   
+
 $$
    y' = r (\sin \alpha \cos \theta + \cos \alpha \sin \theta) = y \cos \theta + x \sin \theta
    $$
@@ -56,29 +56,29 @@ $$
 
 3. **向量分解**：
    将原向量分解为基向量  $\mathbf{i}$  和  $\mathbf{j}$  旋转后的结果。基向量旋转后的新坐标为：
-   
+
 $$
    \mathbf{i}' = (\cos \theta, \sin \theta)
    $$
 
-   
+
 $$
    \mathbf{j}' = (-\sin \theta, \cos \theta)
    $$
 
    旋转后的向量  $P'$  表示为：
-   
+
 $$
    x' \mathbf{i}' + y' \mathbf{j}' = x (\cos \theta, \sin \theta) + y (-\sin \theta, \cos \theta)
    $$
 
    得到：
-   
+
 $$
    x' = x \cos \theta - y \sin \theta
    $$
 
-   
+
 $$
    y' = x \sin \theta + y \cos \theta
    $$
@@ -104,10 +104,10 @@ $$
 将上述公式写成矩阵乘法形式：
 
 $$
-\begin{pmatrix} x' \\ y' \end{pmatrix} = 
-\begin{pmatrix} 
-\cos \theta & -\sin \theta \\ 
-\sin \theta & \cos \theta 
+\begin{pmatrix} x' \\ y' \end{pmatrix} =
+\begin{pmatrix}
+\cos \theta & -\sin \theta \\
+\sin \theta & \cos \theta
 \end{pmatrix}
 \begin{pmatrix} x \\ y \end{pmatrix}
 $$
@@ -115,9 +115,9 @@ $$
 其中，旋转矩阵 $R(\theta)$ 为：
 
 $$
-R(\theta) = \begin{pmatrix} 
-\cos \theta & -\sin \theta \\ 
-\sin \theta & \cos \theta 
+R(\theta) = \begin{pmatrix}
+\cos \theta & -\sin \theta \\
+\sin \theta & \cos \theta
 \end{pmatrix}
 $$
 
@@ -141,10 +141,10 @@ $$
 
 $$
 \boxed{
-\begin{pmatrix} x' \\ y' \end{pmatrix} = 
-\begin{pmatrix} 
-\cos \theta & -\sin \theta \\ 
-\sin \theta & \cos \theta 
+\begin{pmatrix} x' \\ y' \end{pmatrix} =
+\begin{pmatrix}
+\cos \theta & -\sin \theta \\
+\sin \theta & \cos \theta
 \end{pmatrix}
 \begin{pmatrix} x \\ y \end{pmatrix}
 }

@@ -27,7 +27,8 @@ def convert_deepseek_formula(filepath):
     for old, new in replacements.items():
         content = content.replace(old, new)
 
-    content = content.rstrip()
+    # for every line of the content, remove any white space at the end of the line
+    content = "\n".join([line.rstrip() for line in content.split("\n")])
 
     # 写回文件
     with open(filepath, "w", encoding="utf-8") as f:
