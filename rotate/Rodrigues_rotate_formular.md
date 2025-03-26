@@ -63,6 +63,8 @@ $$
 
 这里利用了二维旋转公式，注意到  $\mathbf{k} \times \mathbf{v}_\perp = \|\mathbf{v}_\perp\| \, \mathbf{w}$ 。
 
+这个等式的推导过程附在文后
+
 ---
 
 ### 3. 整体旋转的组合
@@ -133,3 +135,53 @@ $$
 
 
 这种公式在计算机图形学、机器人学以及物理学中都具有重要应用。
+
+
+### 附录
+#### $\mathbf{k} \times \mathbf{v}_\perp = \|\mathbf{v}_\perp\| \, \mathbf{w}$ 的推导过程
+我们从下面几步来理解这一等式：
+
+1. **定义单位向量  $\mathbf{u}$  和  $\mathbf{w}$ ：**
+   已知垂直分量  $\mathbf{v}_\perp$  与旋转轴  $\mathbf{k}$  垂直，我们先定义
+
+$$
+   \mathbf{u} = \frac{\mathbf{v}_\perp}{\|\mathbf{v}_\perp\|}
+   $$
+
+   于是  $\mathbf{u}$  是  $\mathbf{v}_\perp$  的单位方向向量。接着定义
+
+$$
+   \mathbf{w} = \mathbf{k} \times \mathbf{u}.
+   $$
+
+   注意到由于  $\mathbf{k}$  和  $\mathbf{u}$  都是单位向量，且它们正交，所以  $\mathbf{w}$  也是单位向量，并且与  $\mathbf{k}$  和  $\mathbf{u}$  两者均垂直。
+
+2. **利用向量的线性性质：**
+   根据向量的数乘性质， $\mathbf{v}_\perp$  可以写成
+
+$$
+   \mathbf{v}_\perp = \|\mathbf{v}_\perp\| \, \mathbf{u}.
+   $$
+
+   则利用叉乘的分配性，我们有
+
+$$
+   \mathbf{k} \times \mathbf{v}_\perp = \mathbf{k} \times \left( \|\mathbf{v}_\perp\| \, \mathbf{u} \right) = \|\mathbf{v}_\perp\| \, \left( \mathbf{k} \times \mathbf{u} \right).
+   $$
+
+
+3. **代入  $\mathbf{w}$  的定义：**
+   由上一步，已经定义了
+
+$$
+   \mathbf{w} = \mathbf{k} \times \mathbf{u},
+   $$
+
+   因此就有
+
+$$
+   \mathbf{k} \times \mathbf{v}_\perp = \|\mathbf{v}_\perp\| \, \mathbf{w}.
+   $$
+
+
+这就是“注意到  $\mathbf{k} \times \mathbf{v}_\perp = \|\mathbf{v}_\perp\| \, \mathbf{w}$ ”这一步的详细推导过程。关键在于利用了向量数乘的线性性质以及我们对  $\mathbf{v}_\perp$  的单位化表示。
