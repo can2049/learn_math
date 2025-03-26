@@ -16,6 +16,7 @@ def convert_deepseek_formula(filepath):
         " \\)": "$ ",
         "\\(": " $",
         "\\)": "$ ",
+        "•": "-",
     }
 
     # 读取文件内容
@@ -37,11 +38,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Convert DeepSeek output markdown formula"
     )
-    parser.add_argument("file_path", type=str, help="Path to the file")
+    parser.add_argument("file_path", nargs="+", type=str, help="Path to the file")
     args = parser.parse_args()
 
-    # print(r"\(")
-    # print(" \\)")
-
-    convert_deepseek_formula(args.file_path)
+    for file_path in args.file_path:
+        print(f"Processing {file_path}...")
+        if not os.path.isfile(file_path):
+            print(f"Error: {file_path} is not a file.")
+            sys.exit(1)
+        convert_deepseek_formula(file_path)
     print("Done!")
