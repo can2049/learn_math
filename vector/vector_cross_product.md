@@ -29,10 +29,10 @@ $$
 
 ## **1. 叉积的几何性质**
 ### **(1) 方向：右手定则**
-- 叉积结果 ** $\mathbf{u} \times \mathbf{v}$ ** 是一个垂直于 ** $\mathbf{u}$ ** 和 ** $\mathbf{v}$ ** 的向量。
+- 叉积结果 **$\mathbf{u} \times \mathbf{v}$** 是一个垂直于 **$\mathbf{u}$** 和 **$\mathbf{v}$** 的向量。
 - 方向由**右手定则**确定：
-  - 右手四指从 ** $\mathbf{u}$ ** 转向 ** $\mathbf{v}$ **，大拇指指向 ** $\mathbf{u} \times \mathbf{v}$ ** 的方向。
-- 如果 ** $\mathbf{u}$ ** 和 ** $\mathbf{v}$ ** 平行或反平行，叉积为零向量。
+  - 右手四指从 **$\mathbf{u}$** 转向 **$\mathbf{v}$**，大拇指指向 **$\mathbf{u} \times \mathbf{v}$** 的方向。
+- 如果 **$\mathbf{u}$** 和 **$\mathbf{v}$** 平行或反平行，叉积为零向量。
 
 ### **(2) 模长（大小）**
 
@@ -41,8 +41,8 @@ $$
 $$
 
 其中：
--  $\theta$  是 ** $\mathbf{u}$ ** 和 ** $\mathbf{v}$ ** 的夹角。
-- 几何意义：叉积的模等于 ** $\mathbf{u}$ ** 和 ** $\mathbf{v}$ ** 张成的**平行四边形的面积**。
+-  $\theta$  是 **$\mathbf{u}$** 和 **$\mathbf{v}$** 的夹角。
+- 几何意义：叉积的模等于 **$\mathbf{u}$** 和 **$\mathbf{v}$** 张成的**平行四边形的面积**。
 
 ### **(3) 正交性**
 
@@ -114,7 +114,7 @@ $$
   然后归一化  $\hat{\mathbf{n}} = \frac{\mathbf{n}}{\|\mathbf{n}\|}$ 。
 
 ### **(2) 计算面积**
-- 两个向量 ** $\mathbf{u}$ ** 和 ** $\mathbf{v}$ ** 张成的**平行四边形面积**：
+- 两个向量 **$\mathbf{u}$** 和 **$\mathbf{v}$** 张成的**平行四边形面积**：
 
 $$
   A = \|\mathbf{u} \times \mathbf{v}\|
@@ -135,12 +135,12 @@ $$
     \mathbf{u} \times \mathbf{v} = u_x v_y - u_y v_x
     $$
 
-- 如果  $> 0$ ，** $\mathbf{v}$ ** 在 ** $\mathbf{u}$ ** 的**逆时针**方向。
-- 如果  $< 0$ ，** $\mathbf{v}$ ** 在 ** $\mathbf{u}$ ** 的**顺时针**方向。
+- 如果  $> 0$ ，**$\mathbf{v}$** 在 **$\mathbf{u}$** 的**逆时针**方向。
+- 如果  $< 0$ ，**$\mathbf{v}$** 在 **$\mathbf{u}$** 的**顺时针**方向。
 - 如果  $= 0$ ，两向量共线。
 
 ### **(4) 物理学中的力矩**
-- 力矩（扭矩） $\mathbf{\tau}$  是位置向量 ** $\mathbf{r}$ ** 和力 ** $\mathbf{F}$ ** 的叉积：
+- 力矩（扭矩） $\mathbf{\tau}$  是位置向量 **$\mathbf{r}$** 和力 **$\mathbf{F}$** 的叉积：
 
 $$
   \mathbf{\tau} = \mathbf{r} \times \mathbf{F}
@@ -161,7 +161,7 @@ $$
   -  $\mathbf{B}$  是磁场。
 
 ### **(6) 计算旋转轴**
-- 在 3D 旋转中，叉积可用于计算**旋转轴**。例如，给定两个方向向量 ** $\mathbf{u}$ ** 和 ** $\mathbf{v}$ **，旋转轴是它们的叉积：
+- 在 3D 旋转中，叉积可用于计算**旋转轴**。例如，给定两个方向向量 **$\mathbf{u}$** 和 **$\mathbf{v}$**，旋转轴是它们的叉积：
 
 $$
   \mathbf{axis} = \mathbf{u} \times \mathbf{v}
@@ -184,7 +184,7 @@ $$
 
 
 ### **(2) 平行向量的叉积**
-如果 ** $\mathbf{u}$ ** 和 ** $\mathbf{v}$ ** 平行（即  $\theta = 0°$  或  $180°$ ），则：
+如果 **$\mathbf{u}$** 和 **$\mathbf{v}$** 平行（即  $\theta = 0°$  或  $180°$ ），则：
 
 $$
 \mathbf{u} \times \mathbf{v} = \mathbf{0}
