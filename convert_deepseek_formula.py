@@ -10,6 +10,7 @@ import re
 def convert_deepseek_formula(filepath):
     # 定义替换规则
     replacements = {
+        "[1mm]": "",
         "\\[": "\n$$",
         "\\]": "$$\n",
         "\\( ": " $",

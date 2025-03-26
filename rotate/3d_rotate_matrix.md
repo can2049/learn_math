@@ -16,7 +16,7 @@
 
 $$
 \begin{cases}
-y' = y \cos\theta - z \sin\theta,\\[1mm]
+y' = y \cos\theta - z \sin\theta,\\
 z' = y \sin\theta + z \cos\theta.
 \end{cases}
 $$
@@ -41,7 +41,7 @@ $$
 
 $$
 \begin{cases}
-x' = x \cos\theta + z \sin\theta,\\[1mm]
+x' = x \cos\theta + z \sin\theta,\\
 z' = -x \sin\theta + z \cos\theta.
 \end{cases}
 $$
@@ -66,7 +66,7 @@ $$
 
 $$
 \begin{cases}
-x' = x \cos\theta - y \sin\theta,\\[1mm]
+x' = x \cos\theta - y \sin\theta,\\
 y' = x \sin\theta + y \cos\theta.
 \end{cases}
 $$
