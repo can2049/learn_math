@@ -2,6 +2,7 @@
 learning math
 
 # todo list
+- [ ] 矩阵协方差矩阵
 - [ ] 矩阵微分
 - [ ] 矩阵求导
 - [ ] 矩阵求逆
