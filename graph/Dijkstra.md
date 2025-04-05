@@ -43,11 +43,11 @@ function Dijkstra(Graph, source):
             dist[v] ← ∞
             prev[v] ← undefined
         add v to Q
-    
+
     while Q is not empty:
         u ← vertex in Q with min dist[u]
         remove u from Q
-        
+
         for each neighbor v of u:
             alt ← dist[u] + length(u, v)
             if alt < dist[v]:
@@ -63,7 +63,7 @@ function Dijkstra(Graph, source):
   - 使用数组实现优先队列：O(V²)
   - 使用二叉堆实现优先队列：O((V+E) log V)
   - 使用斐波那契堆实现优先队列：O(E + V log V)
-  
+
 - **空间复杂度**：O(V)（用于存储距离和前驱信息）
 
 ## 算法特性
