@@ -113,6 +113,9 @@ reset_button = Button(
 
 # Define update function for sliders
 def update(_):
+    # The underscore (_) is used as a placeholder for the event argument that Matplotlib sliders pass
+    # This argument contains information about the slider event but we don't need to use it
+    # It's a common Python convention to use underscore for variables that won't be used
     update_plot(s_mu1.val, s_sigma1.val, s_mu2.val, s_sigma2.val)
 
 
