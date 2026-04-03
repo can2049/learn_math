@@ -1,0 +1,23 @@
+
+
+将这篇pdf @Browser https://arxiv.org/pdf/1707.06347  文件全文翻译为中文，并添加必要的注释和解释。
+对于其中的公式和数学原理，要尤其重点解释和说明细节。
+
+将阅读报告写入文件  @Proximal_Policy_Optimization_Algorithms.md
+
+说明：
+如果涉及到数学公式，请使用以下markdown风格的数学表达式格式：
+1. 独立公式用$$...$$包裹并前后空行
+2. 行内变量用 $ ... $ 标记
+3. 禁止使用 \text{} 等LaTeX修饰符
+4. 矩阵符号用\mathbf{}
+
+包含独立公式和行内变量的示例开始：
+
+$$
+\mathbf{u}^{(k+1)} = \sum_{i=1}^m p_i \mathbf{v}_i + \mathbf{u}^{(k)}
+$$
+
+其中 $ p_i $ 是注意力权重。
+
+示例结束
