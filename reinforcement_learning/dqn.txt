@@ -1,0 +1,9 @@
+
+
+
+Playing_Atari_with_Deep_Reinforcement_Learning
+
+将这篇pdf全文翻译为中文，并详细解释其中的公式
+@Browser https://arxiv.org/pdf/1312.5602 
+将阅读分析报告写入文件  @Playing_Atari_with_Deep_Reinforcement_Learning.md
+
